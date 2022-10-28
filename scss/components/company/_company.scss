@@ -1,12 +1,14 @@
 .group-company {
   padding: 94px 0;
   &__title {
-    color: var(--brand-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
     margin-bottom: 50px;
+    @extend %header;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.16;
+    // text-align: center;
+
+    color: var(--brand-text-color);
   }
 }
 
@@ -17,22 +19,22 @@
 
   &__link {
     display: flex;
-    width: 170px;
-    height: 92px;
     justify-content: center;
     align-items: center;
+    width: 170px;
+    height: 92px;
+
     border-radius: 4px;
     margin: 0;
     transition: background-color 250ms var(--timing-function),
       fill 250ms var(--timing-function), border 250ms var(--timing-function);
     border: 1px solid var(--icons-color);
     fill: var(--icons-color);
-  }
-
-  &__link:hover,
-  &__link:focus {
-    background-color: var(--container-hero-color);
-    fill: var(--tittle-buttom-color);
-    border: 1px solid var(--tittle-buttom-color);
+    &:hover,
+    &:focus {
+      background-color: var(--container-hero-color);
+      fill: var(--tittle-buttom-color);
+      border: 1px solid var(--tittle-buttom-color);
+    }
   }
 }

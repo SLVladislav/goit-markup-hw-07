@@ -76,10 +76,9 @@
   &__svg {
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--icons-bgr-color);
-  }
-
-  &__svg:hover,
-  &__svg:focus {
-    background-color: var(--tittle-buttom-color);
+    &:hover,
+    &:focus {
+      background-color: var(--tittle-buttom-color);
+    }
   }
 }

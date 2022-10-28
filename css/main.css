@@ -36,6 +36,13 @@
   cursor: pointer;
 }
 
+.group-company__title, .team-section__title, .project__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
 body {
   background-color: var(--container-hero-color);
   font-family: Roboto, sans-serif;
@@ -217,10 +224,6 @@ img {
 .project__header {
   margin-bottom: 50px;
   color: var(--brand-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 }
 
 .info {
@@ -291,10 +294,6 @@ img {
 .team-section__title {
   margin-bottom: 50px;
   color: var(--brand-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 }
 
 .social {
@@ -357,12 +356,8 @@ img {
   padding: 94px 0;
 }
 .group-company__title {
-  color: var(--brand-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
   margin-bottom: 50px;
+  color: var(--brand-text-color);
 }
 
 .company {
@@ -372,10 +367,10 @@ img {
 }
 .company__link {
   display: flex;
-  width: 170px;
-  height: 92px;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 92px;
   border-radius: 4px;
   margin: 0;
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function), border 250ms var(--timing-function);

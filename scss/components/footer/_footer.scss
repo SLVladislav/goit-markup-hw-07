@@ -1,0 +1,85 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--content-section-color);
+  font-style: normal;
+
+  &__label {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__address {
+    font-style: normal;
+    margin-right: 77px;
+  }
+
+  &__logo {
+    color: var(--container-hero-color);
+  }
+
+  &__street {
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    color: var(--container-hero-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+  }
+
+  &__mail {
+    margin-bottom: 9px;
+  }
+
+  &__email,
+  &__tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+    color: var(--section-footer-color);
+  }
+  &__email:hover,
+  &__email:focus,
+  &__tel:hover,
+  &__tel:focus {
+    color: var(--tittle-buttom-color);
+  }
+
+  &__link {
+    margin-right: 93px;
+  }
+
+  &__title {
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--container-hero-color);
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__svg {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--icons-bgr-color);
+  }
+
+  &__svg:hover,
+  &__svg:focus {
+    background-color: var(--tittle-buttom-color);
+  }
+}

@@ -1,0 +1,12 @@
+.project {
+  padding-bottom: 94px;
+  &__header {
+    margin-bottom: 50px;
+
+    color: var(--brand-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
+}

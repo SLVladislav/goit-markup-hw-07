@@ -50,14 +50,6 @@ body {
   margin: 0;
 }
 
-.conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1200px;
-}
-
 h1,
 h2,
 h3,
@@ -75,6 +67,14 @@ img {
 
 .list {
   list-style: none;
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
 }
 
 .header {

@@ -1,10 +1,11 @@
 @import "./utils/vars";
 @import "./utils/visually-hidden";
 @import "./utils/plaseholders";
+@import "./utils/mixin";
 
 @import "./base/body";
-@import "./base/conteiner";
 @import "./base/reset";
+@import "./base/conteiner";
 
 @import "./components/header/header";
 @import "./components/header/navigation";

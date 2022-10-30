@@ -127,7 +127,7 @@ img {
 .logo:hover, .logo:focus {
   color: var(--tittle-buttom-color);
 }
-.logo--accent {
+.logo__web--accent {
   color: var(--tittle-buttom-color);
 }
 
@@ -373,7 +373,7 @@ img {
   height: 92px;
   border-radius: 4px;
   margin: 0;
-  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function), border 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
   border: 1px solid var(--icons-color);
   fill: var(--icons-color);
 }
@@ -583,7 +583,6 @@ img {
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
   color: var(--brand-text-color);
 }
 .section-btn__buttons:hover, .section-btn__buttons:focus {

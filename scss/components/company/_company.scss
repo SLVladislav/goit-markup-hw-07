@@ -26,9 +26,8 @@
 
     border-radius: 4px;
     margin: 0;
-    @include transition(fill, border);
-    // transition: background-color 250ms var(--timing-function),
-    //   fill 250ms var(--timing-function), border 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function),
+      border 250ms var(--timing-function);
     border: 1px solid var(--icons-color);
     fill: var(--icons-color);
     &:hover,

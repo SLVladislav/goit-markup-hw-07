@@ -37,16 +37,6 @@
     border: 0;
     min-width: 216px;
     @extend %button;
-    // font-family: inherit;
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.87;
-    // letter-spacing: 0.06em;
-    // border-radius: 4px;
-    // cursor: pointer;
-    // transition: background-color 250ms var(--timing-function),
-    //   color 250ms var(--timing-function),
-    //   box-shadow 250ms var(--timing-function);
     @include transition();
     background-color: var(--tittle-buttom-color);
     color: var(--container-hero-color);

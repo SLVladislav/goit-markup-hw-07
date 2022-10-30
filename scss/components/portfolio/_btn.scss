@@ -17,10 +17,6 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
     cursor: pointer;
-    @include transition();
-    // transition: background-color 250ms var(--timing-function),
-    //   color 250ms var(--timing-function),
-    //   box-shadow 250ms var(--timing-function);
     color: var(--brand-text-color);
     &:hover,
     &:focus {

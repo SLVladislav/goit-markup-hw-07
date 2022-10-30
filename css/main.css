@@ -436,12 +436,6 @@ img {
   text-transform: uppercase;
   color: var(--container-hero-color);
 }
-.footer__social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
 .footer__svg {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--icons-bgr-color);

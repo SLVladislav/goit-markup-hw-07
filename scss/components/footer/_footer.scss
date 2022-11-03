@@ -6,13 +6,33 @@
   font-style: normal;
 
   &__label {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: baseline;
+      text-align: start;
+    }
   }
 
   &__address {
     font-style: normal;
-    margin-right: 77px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
   }
 
   &__logo {
@@ -51,7 +71,12 @@
   }
 
   &__link {
-    margin-right: 93px;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 92px;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -64,6 +89,9 @@
     text-transform: uppercase;
 
     color: var(--container-hero-color);
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
   &__svg {
     background-color: rgba(255, 255, 255, 0.1);

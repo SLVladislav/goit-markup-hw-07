@@ -3,26 +3,37 @@
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   &__logo {
     margin-right: 93px;
   }
   &__gruop {
-    margin-left: auto;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+    }
   }
 
   &__link {
-    display: flex;
-  }
-
-  &__item + &__item {
-    margin-left: 50px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-direction: row;
+    }
   }
 
   &__info {
-    display: flex;
     margin-left: auto;
-    padding: 34px 0;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -51,6 +62,7 @@
   text-decoration: none;
   transition: color 250ms var(--timing-function);
   color: var(--primery-web-color);
+  padding: 16px 0 16px 0;
   &:hover,
   &:focus {
     color: var(--tittle-buttom-color);

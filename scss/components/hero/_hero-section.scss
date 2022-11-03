@@ -1,8 +1,9 @@
-.overlay {
-  max-width: 1600px;
-  height: 600px;
+.first-section {
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  max-width: 480px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -12,24 +13,32 @@
   background-position: center;
   background-size: cover;
   background-color: var(--content-section-color);
-}
-
-.first-section {
-  padding: 200px 0;
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
 
   &__name {
     margin: 0 auto;
     margin-bottom: 30px;
-
     color: var(--container-hero-color);
-    width: 696px;
+    max-width: 360px;
     font-weight: 900;
     text-align: center;
-    font-size: 44px;
-    line-height: 1.36;
+
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {

@@ -1,12 +1,16 @@
 .team-section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-
+  padding: 60px 0;
   background-color: var(--section-item-color);
-  &__title {
-    margin-bottom: 50px;
-    @extend %header;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
+  &__title {
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+    @extend %header;
     color: var(--brand-text-color);
   }
 }

@@ -1,4 +1,5 @@
 .form__title {
+  display: block;
   font-style: normal;
   text-decoration: none;
   margin-bottom: 20px;
@@ -9,20 +10,31 @@
 
   color: var(--container-hero-color);
 }
+.form__label {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+}
 .form input {
-  width: 358px;
-  margin: 0;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--content-section-color);
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .form__button {
   position: relative;
   padding-right: 28px;
-  margin-left: 17px;
+  margin: 0px auto;
   min-width: 200px;
   height: 50px;
   @extend %button;

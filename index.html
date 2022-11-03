@@ -25,6 +25,18 @@
           ><span class="logo__web logo__web--accent">Web</span>Studio</a
         >
         <nav class="navigation">
+          <button type="button" class="navigation__button">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="navigation__menu"
+                href="./images/icons.svg#menu"
+              ></use>
+              <use
+                class="navigation__close"
+                href="./images/icons.svg#close"
+              ></use>
+            </svg>
+          </button>
           <ul class="navigation__list list">
             <li class="navigation__item">
               <a
@@ -65,18 +77,16 @@
     <!-- Компанія -->
     <main>
       <!-- Секція 1 -->
-      <div class="overlay">
-        <section class="first-section">
-          <div class="conteiner">
-            <h1 class="first-section__name">
-              Ефективні рішення для вашого бізнесу
-            </h1>
-            <button class="first-section__button" type="button" data-modal-open>
-              Замовити послугу
-            </button>
-          </div>
-        </section>
-      </div>
+      <section class="first-section">
+        <div class="conteiner">
+          <h1 class="first-section__name">
+            Ефективні рішення для вашого бізнесу
+          </h1>
+          <button class="first-section__button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
+        </div>
+      </section>
       <!-- Секція 2 -->
       <section class="section-excample">
         <div class="conteiner">
@@ -343,42 +353,42 @@
         <div class="conteiner">
           <h2 class="group-company__title">Постійні клієнти</h2>
           <ul class="company list">
-            <li>
+            <li class="company__item">
               <a class="company__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-group"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="company__item">
               <a class="company__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="company__item">
               <a class="company__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-group3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="company__item">
               <a class="company__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-group4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="company__item">
               <a class="company__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-group5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="company__item">
               <a class="company__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-group6"></use>
@@ -446,7 +456,7 @@
 
         <form class="form">
           <h2 class="form__title">Підпишіться на розсилку</h2>
-          <div>
+          <div class="form__label">
             <label>
               <input type="email" name="email" placeholder="E-mail" />
             </label>
